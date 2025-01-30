@@ -1,0 +1,25 @@
+'''roll the dice game'''
+import random
+import time
+
+print(" Roll The Dice ")
+number1 = random.randint(1,6)
+number2 = random.randint(1,6)
+
+
+while True:
+ a = input("Enter y to roll dice and n to exit game !!")
+
+ if a == "y":
+    print("your dice is rolled !!")
+    print("wait for a moment!")
+    time.sleep(3)
+    print(number1,number2)
+
+ elif a == "n":
+    print("game exitting!!")
+    print("thanks for playing!!") 
+    break
+
+else :
+    print("invalid choice try again !!")
